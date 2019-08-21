@@ -1,6 +1,6 @@
 ![image](https://img.shields.io/badge/test-passing-green.svg)
 
-# nginx-zuul-dynamic-lb
+# nginx-zuul-dynamic-lb(Fix bug for Basic auth)
 :maple_leaf: 基于Lua的Spring Cloud网关高可用通用Ngnix插件
 
 ***
