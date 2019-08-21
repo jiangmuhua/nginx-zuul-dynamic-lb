@@ -60,7 +60,7 @@ local function build_eureka_params(service_name)
     local headers = {["Accept"]="application/json"}
     local eureka_service_basic_authentication = _M.eureka_service_basic_authentication
     if eureka_service_basic_authentication then
-        local basic_authentication = "Basic " .. eureka_service_basic_authentication
+        local basic_authentication = "Basic " .. ngx.encode_base64(eureka_service_basic_authentication)
         headers = {["Accept"]="application/json", ["Authorization"]=basic_authentication}
     end
     local params = {path=uri, method="GET", headers=headers}
